@@ -1,0 +1,4 @@
+.cursor{position:fixed;z-index:1000;left:-16px;top:-16px;width:32px;height:32px;border:1px solid rgba(255,255,255,.7);border-radius:50%;pointer-events:none;mix-blend-mode:difference;transition:width .28s ease,height .28s ease,left .28s ease,top .28s ease,background .28s ease}
+.cursor span{position:absolute;inset:50%;width:3px;height:3px;border-radius:50%;background:white;transform:translate(-50%,-50%)}
+.active{width:58px;height:58px;left:-29px;top:-29px;background:rgba(255,255,255,.15)}
+@media(pointer:coarse){.cursor{display:none}}

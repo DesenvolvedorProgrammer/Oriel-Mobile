@@ -1,0 +1,44 @@
+ORIEL V5 MEDIA MANIFEST
+
+INTRO
+  intro.mp4
+
+CAMPAIGN FILMS
+  a-casa.mp4
+  atelier.mp4
+  women.mp4
+  men.mp4
+  leather-goods.mp4
+  accessories-scarf.mp4
+  campaign-duo.mp4
+
+PHOTOGRAPHY
+  01_A_CASA_Hero.jpg
+  02_A_CASA_Interior_Lifestyle.jpg
+  03_ATELIER_Master_Tailor.jpg
+  04_ATELIER_Tailoring_Detail.jpg
+  05_MULHERES_Campaign_Classic_Corridor.jpg
+  06_MULHERES_Campaign_Modern_Camel_Coat.jpg
+  07_MULHERES_Burgundy_Silk_Dress_Front.jpg
+  08_MULHERES_Burgundy_Silk_Dress_Second_View.jpg
+  09_MULHERES_Navy_Coat_Full.jpg
+  10_MULHERES_Navy_Coat_Second_View.jpg
+  11_MULHERES_Cream_Drape_Blouse_Full.jpg
+  12_MULHERES_Cream_Drape_Blouse_Second_View.jpg
+  13_HOMENS_Campaign_Estate_Walk.jpg
+  14_HOMENS_Campaign_Modern_Grey_Coat.jpg
+  15_HOMENS_Green_Polo_Full.jpg
+  16_HOMENS_Green_Polo_Second_View.jpg
+  17_HOMENS_Blue_Shirt_Full.jpg
+  18_HOMENS_Blue_Shirt_Second_View.jpg
+  19_LEATHER_GOODS_Mens_Bag_Editorial.jpg
+  20_LEATHER_GOODS_Bag_Still_Life.jpg
+  21_LEATHER_GOODS_Bag_On_Pedestal.jpg
+  22_LEATHER_GOODS_Womens_Bag_Carry_Full.jpg
+  23_LEATHER_GOODS_Womens_Bag_Carry_Alt.jpg
+  24_ACCESSORIES_Loafers_Still_Life.jpg
+  25_ACCESSORIES_Loafers_On_Foot.jpg
+  26_ACCESSORIES_Silk_Scarf_Still_Life.jpg
+  27_ACCESSORIES_Silk_Scarf_On_Model.jpg
+  28_CAMPAIGN_Travel_Coastline.jpg
+  29_CAMPAIGN_Duo_Palace.jpg

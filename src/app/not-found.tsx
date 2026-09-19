@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound(){return <main style={{minHeight:'100svh',background:'#171714',color:'#eee9df',display:'grid',placeItems:'center',textAlign:'center',padding:'40px'}}><div><span className="eyebrow">ORIEL / 404</span><h1 className="display" style={{margin:'30px 0'}}>A page<br/><em>out of season.</em></h1><Link className="link-line" href="/">Return to the maison</Link></div></main>}

@@ -1,0 +1,1 @@
+.track{position:fixed;z-index:130;left:0;right:0;top:0;height:2px;pointer-events:none}.track div{height:100%;background:#b18f6e;transform:scaleX(0);transform-origin:left center;will-change:transform}

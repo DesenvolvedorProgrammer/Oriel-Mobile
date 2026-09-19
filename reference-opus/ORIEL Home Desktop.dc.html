@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  body{ margin:0; background:oklch(0.21 0.005 60); font-family:"Jost",Helvetica,sans-serif; }
+  a{ color:inherit; text-decoration:none; }
+  a:hover{ color:oklch(0.78 0.045 85); }
+  @keyframes oriel-slide{ from{ transform:translateX(0) } to{ transform:translateX(-50%) } }
+  ::selection{ background:oklch(0.33 0.055 55); color:oklch(0.955 0.012 85); }
+</style>
+</helmet>
+
+<div style="width:1440px; margin:0 auto; background:oklch(0.955 0.012 85); color:oklch(0.21 0.005 60); overflow:hidden;">
+
+  <header style="position:relative; z-index:10; display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); align-items:center; padding:24px 56px; background:oklch(0.955 0.012 85);">
+    <div style="display:flex; gap:32px; align-items:center; font-size:10px; letter-spacing:0.24em; text-transform:uppercase;">
+      <a href="#" style="display:flex; gap:10px; align-items:center; transition:color .45s ease;"><span style="display:flex; flex-direction:column; gap:3.5px;"><span style="display:block; width:15px; height:1px; background:currentColor;"></span><span style="display:block; width:15px; height:1px; background:currentColor;"></span></span>Menu</a>
+      <a href="#" style="transition:color .45s ease;">Search</a>
+    </div>
+    <div style="text-align:center;">
+      <div style="font-family:'Cormorant Garamond',serif; font-size:30px; font-weight:400; letter-spacing:0.52em; padding-left:0.52em; line-height:1;">ORIEL</div>
+      <div style="margin-top:7px; font-size:7.5px; letter-spacing:0.42em; text-transform:uppercase; color:oklch(0.21 0.005 60 / 0.45);">Maison · Paris</div>
+    </div>
+    <div style="display:flex; gap:30px; justify-content:flex-end; font-size:10px; letter-spacing:0.24em; text-transform:uppercase;">
+      <a href="#" style="transition:color .45s ease;">Client Services</a>
+      <a href="#" style="transition:color .45s ease;">Account</a>
+      <a href="#" style="transition:color .45s ease;">Bag <span style="color:oklch(0.62 0.075 65)">(0)</span></a>
+    </div>
+  </header>
+
+  <nav style="position:relative; z-index:10; display:flex; justify-content:center; gap:46px; padding:0 56px 22px; background:oklch(0.955 0.012 85); border-bottom:1px solid oklch(0.78 0.045 85 / 0.5); font-size:10px; letter-spacing:0.26em; text-transform:uppercase;">
+    <a href="#" style="transition:color .45s ease;">New Arrivals</a>
+    <a href="#" style="transition:color .45s ease;">Women</a>
+    <a href="#" style="transition:color .45s ease;">Men</a>
+    <a href="#" style="transition:color .45s ease;">Collections</a>
+    <a href="#" style="transition:color .45s ease;">Editorial</a>
+    <a href="#" style="transition:color .45s ease;">Maison</a>
+    <a href="#" style="transition:color .45s ease;">Contact</a>
+  </nav>
+
+  <section style="position:relative; height:880px; background:oklch(0.25 0.01 60);">
+    <div style="position:absolute; inset:0; min-width:0; overflow:hidden;">
+      <image-slot id="oriel-hero" shape="rect" fit="cover" placeholder="Vídeo de campanha · 1440×880"></image-slot>
+    </div>
+    <div style="position:absolute; inset:0; pointer-events:none; background:linear-gradient(to bottom, oklch(0.21 0.005 60 / 0.42) 0%, transparent 34%, oklch(0.21 0.005 60 / 0.14) 62%, oklch(0.21 0.005 60 / 0.72) 100%);"></div>
+    <div style="position:absolute; left:56px; top:64px; pointer-events:none; writing-mode:vertical-rl; font-size:9.5px; letter-spacing:0.36em; text-transform:uppercase; color:oklch(0.955 0.012 85 / 0.7);">Fall / Winter 2026 · Chapter III</div>
+    <div style="position:absolute; left:0; right:0; bottom:112px; text-align:center; pointer-events:none;">
+      <div style="font-size:9.5px; letter-spacing:0.4em; text-transform:uppercase; color:oklch(0.86 0.05 85);">The Winter Collection</div>
+      <h1 style="font-family:'Cormorant Garamond',serif; font-weight:300; font-size:106px; line-height:0.94; letter-spacing:-0.035em; margin:26px 0 0; color:oklch(0.97 0.012 85);">Light, held<br><em style="font-style:italic; font-weight:300;">still</em>.</h1>
+      <p style="max-width:430px; margin:30px auto 0; font-size:13.5px; line-height:1.85; font-weight:300; letter-spacing:0.02em; color:oklch(0.955 0.012 85 / 0.82);">Forty-one pieces cut in Italian wool, waxed linen and shearling. Photographed at dawn in the Hôtel Sézanne.</p>
+      <div style="display:flex; gap:44px; justify-content:center; margin-top:46px; pointer-events:auto; font-size:10px; letter-spacing:0.28em; text-transform:uppercase; color:oklch(0.97 0.012 85);">
+        <a href="#" style="padding-bottom:8px; border-bottom:1px solid oklch(0.97 0.012 85 / 0.8); transition:border-color .5s ease, color .5s ease;" style-hover="border-color:oklch(0.86 0.05 85);">Discover Women</a>
+        <a href="#" style="padding-bottom:8px; border-bottom:1px solid oklch(0.97 0.012 85 / 0.8); transition:border-color .5s ease, color .5s ease;" style-hover="border-color:oklch(0.86 0.05 85);">Discover Men</a>
+      </div>
+    </div>
+    <div style="position:absolute; right:56px; bottom:114px; text-align:right; pointer-events:none; font-size:9.5px; letter-spacing:0.3em; text-transform:uppercase; color:oklch(0.955 0.012 85 / 0.55); line-height:2.3;">Scale 1.06 → 1.0 · 2400ms<br>Headline em máscara por linha</div>
+    <div style="position:absolute; left:0; right:0; bottom:44px; display:flex; justify-content:center; gap:8px; pointer-events:none;">
+      <span style="width:46px; height:1px; background:oklch(0.97 0.012 85);"></span>
+      <span style="width:46px; height:1px; background:oklch(0.97 0.012 85 / 0.32);"></span>
+      <span style="width:46px; height:1px; background:oklch(0.97 0.012 85 / 0.32);"></span>
+    </div>
+  </section>
+
+  <section style="padding:150px 56px 128px; text-align:center;">
+    <div style="font-size:9.5px; letter-spacing:0.4em; text-transform:uppercase; color:oklch(0.62 0.075 65);">I · The Maison</div>
+    <h2 style="font-family:'Cormorant Garamond',serif; font-weight:300; font-size:50px; line-height:1.22; letter-spacing:-0.025em; margin:34px auto 0; max-width:19ch;">We do not chase the season. We build the wardrobe that outlives it.</h2>
+    <div style="width:1px; height:64px; background:oklch(0.78 0.045 85); margin:44px auto;"></div>
+    <p style="max-width:560px; margin:0 auto; font-size:14.5px; line-height:1.95; font-weight:300; color:oklch(0.21 0.005 60 / 0.72);">Founded in 1994 in the ninth arrondissement, ORIEL works in short series from a single atelier. Every garment is cut by hand, fitted on the body, and finished by the same tailor who began it. Nothing leaves the house untried.</p>
+    <a href="#" style="display:inline-block; margin-top:44px; font-size:10px; letter-spacing:0.28em; text-transform:uppercase; border-bottom:1px solid oklch(0.21 0.005 60 / 0.4); padding-bottom:8px; transition:border-color .45s ease;" style-hover="border-color:oklch(0.62 0.075 65);">Read the manifesto</a>
+  </section>
+
+  <section style="padding:0 0 132px;">
+    <div style="position:relative; height:820px; background:oklch(0.3 0.01 60); min-width:0; overflow:hidden;">
+      <image-slot id="oriel-collection" shape="rect" placeholder="Campanha · full-bleed"></image-slot>
+      <div style="position:absolute; inset:0; pointer-events:none; background:linear-gradient(to right, oklch(0.21 0.005 60 / 0.55), transparent 60%);"></div>
+      <div style="position:absolute; left:96px; top:50%; transform:translateY(-50%); max-width:420px; pointer-events:none;">
+        <div style="font-size:9.5px; letter-spacing:0.4em; text-transform:uppercase; color:oklch(0.86 0.05 85);">II · Featured Collection</div>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-weight:300; font-size:62px; line-height:1.04; letter-spacing:-0.03em; margin:28px 0 0; color:oklch(0.97 0.012 85);">Sézanne,<br>at first light</h2>
+        <p style="margin:28px 0 0; font-size:14px; line-height:1.9; font-weight:300; color:oklch(0.955 0.012 85 / 0.8);">Fourteen looks built around a single shade of camel. Tailoring softened, shoulders unstructured, hems left raw.</p>
+        <div style="display:flex; flex-direction:column; gap:16px; margin-top:44px; pointer-events:auto; align-items:flex-start; font-size:10px; letter-spacing:0.28em; text-transform:uppercase; color:oklch(0.97 0.012 85);">
+          <a href="#" style="padding:16px 40px; background:oklch(0.97 0.012 85); color:oklch(0.21 0.005 60); transition:background .5s ease, color .5s ease;" style-hover="background:oklch(0.33 0.055 55); color:oklch(0.97 0.012 85);">Shop the collection</a>
+          <a href="#" style="padding-bottom:7px; border-bottom:1px solid oklch(0.97 0.012 85 / 0.6); transition:border-color .45s ease;" style-hover="border-color:oklch(0.86 0.05 85);">View the lookbook — 14 looks</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:0 56px 136px;">
+    <div style="text-align:center; margin-bottom:56px;">
+      <div style="font-size:9.5px; letter-spacing:0.4em; text-transform:uppercase; color:oklch(0.62 0.075 65);">III · Categories</div>
+      <h2 style="font-family:'Cormorant Garamond',serif; font-weight:300; font-size:42px; letter-spacing:-0.02em; margin:22px 0 0;">The house, by category</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px;">
+      <a href="#" style="display:block; position:relative; height:600px; background:oklch(0.88 0.014 80); min-width:0; overflow:hidden; grid-row:span 2;">
+        <image-slot id="oriel-cat1" shape="rect" placeholder="Womenswear"></image-slot>
+        <div style="position:absolute; inset:auto 0 0 0; pointer-events:none; padding:30px; background:linear-gradient(transparent, oklch(0.21 0.005 60 / 0.78)); color:oklch(0.97 0.012 85);">
+          <div style="font-family:'Cormorant Garamond',serif; font-size:30px; line-height:1.1;">Womenswear</div>
+          <div style="margin-top:10px; font-size:9.5px; letter-spacing:0.26em; text-transform:uppercase; color:oklch(0.97 0.012 85 / 0.72);">22 pieces · Explore</div>
+        </div>
+      </a>
+      <a href="#" style="display:block; position:relative; height:600px; background:oklch(0.88 0.014 80); min-width:0; overflow:hidden; grid-row:span 2;">
+        <image-slot id="oriel-cat2" shape="rect" placeholder="Menswear"></image-slot>
+        <div style="position:absolute; inset:auto 0 0 0; pointer-events:none; padding:30px; background:linear-gradient(transparent, oklch(0.21 0.005 60 / 0.78)); color:oklch(0.97 0.012 85);">
+          <div style="font-family:'Cormorant Garamond',serif; font-size:30px; line-height:1.1;">Menswear</div>
+          <div style="margin-top:10px; font-size:9.5px; letter-spacing:0.26em; text-transform:uppercase; color:oklch(0.97 0.012 85 / 0.72);">19 pieces · Explore</div>
+        </div>
+      </a>
+      <a href="#" style="display:block; position:relative; height:289px; background:oklch(0.88 0.014 80); min-width:0; overflow:hidden;">
+        <image-slot id="oriel-cat3" shape="rect" placeholder="Accessories"></image-slot>
+        <div style="position:absolute; inset:auto 0 0 0; pointer-events:none; padding:24px; background:linear-gradient(transparent, oklch(0.21 0.005 60 / 0.72)); color:oklch(0.97 0.012 85); display:flex; justify-content:space-between; align-items:baseline;">
+          <span style="font-family:'Cormorant Garamond',serif; font-size:25px;">Accessories</span>
+          <span style="font-size:9.5px; letter-spacing:0.22em;">31</span>
+        </div>
+      </a>
+      <a href="#" style="display:block; position:relative; height:289px; background:oklch(0.88 0.014 80); min-width:0; overflow:hidden;">
+        <image-slot id="oriel-cat4" shape="rect" placeholder="Footwear"></image-slot>
+        <div style="position:absolute; inset:auto 0 0 0; pointer-events:none; padding:24px; background:linear-gradient(transparent, oklch(0.21 0.005 60 / 0.72)); color:oklch(0.97 0.012 85); display:flex; justify-content:space-between; align-items:baseline;">
+          <span style="font-family:'Cormorant Garamond',serif; font-size:25px;">Footwear</span>
+          <span style="font-size:9.5px; letter-spacing:0.22em;">12</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section style="background:oklch(0.21 0.005 60); color:oklch(0.955 0.012 85); padding:128px 56px 132px;">
+    <div style="text-align:center; margin-bottom:64px;">
+      <div style="font-size:9.5px; letter-spacing:0.4em; text-transform:uppercase; color:oklch(0.78 0.045 85);">IV · Editorial</div>
+      <h2 style="font-family:'Cormorant Garamond',serif; font-weight:300; font-size:44px; letter-spacing:-0.025em; margin:22px 0 0;">Stories from the house</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:28px; align-items:start;">
+      <div>
+        <div style="position:relative; height:560px; background:oklch(0.28 0.01 60); min-width:0; overflow:hidden;">
+          <image-slot id="oriel-ed1" shape="rect" placeholder="Editorial principal"></image-slot>
+        </div>
+        <div style="margin-top:30px; max-width:520px;">
+          <div style="font-size:9.5px; letter-spacing:0.26em; text-transform:uppercase; color:oklch(0.78 0.045 85);">Campaign · 08 min read</div>
+          <h3 style="font-family:'Cormorant Garamond',serif; font-weight:300; font-size:36px; line-height:1.14; letter-spacing:-0.02em; margin:18px 0 0;">The room where the coat was made</h3>
+          <p style="margin:18px 0 0; font-size:14px; line-height:1.9; font-weight:300; color:oklch(0.955 0.012 85 / 0.72);">Three weeks inside the atelier on rue Taitbout, following a single camel overcoat from paper pattern to final press.</p>
+          <a href="#" style="display:inline-block; margin-top:26px; font-size:10px; letter-spacing:0.28em; text-transform:uppercase; border-bottom:1px solid oklch(0.955 0.012 85 / 0.45); padding-bottom:7px; transition:border-color .45s ease;" style-hover="border-color:oklch(0.78 0.045 85);">Read the story</a>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:28px; padding-top:72px;">
+        <div>
+          <div style="position:relative; height:330px; background:oklch(0.28 0.01 60); min-width:0; overflow:hidden;">
+            <image-slot id="oriel-ed2" shape="rect" placeholder="Editorial secundário"></image-slot>
+          </div>
+          <div style="margin-top:22px;">
+            <div style="font-size:9.5px; letter-spacing:0.26em; text-transform:uppercase; color:oklch(0.955 0.012 85 / 0.5);">Conversation</div>
+            <h3 style="font-family:'Cormorant Garamond',serif; font-weight:300; font-size:26px; line-height:1.2; margin:13px 0 0;">Noor Halabi on restraint</h3>
+          </div>
+        </div>
+        <div>
+          <div style="position:relative; height:330px; background:oklch(0.28 0.01 60); min-width:0; overflow:hidden;">
+            <image-slot id="oriel-ed3" shape="rect" placeholder="Editorial terciário"></image-slot>
+          </div>
+          <div style="margin-top:22px;">
+            <div style="font-size:9.5px; letter-spacing:0.26em; text-transform:uppercase; color:oklch(0.955 0.012 85 / 0.5);">Material</div>
+            <h3 style="font-family:'Cormorant Garamond',serif; font-weight:300; font-size:26px; line-height:1.2; margin:13px 0 0;">Waxed linen, six seasons on</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:132px 56px 0;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:56px;">
+      <div>
+        <div style="font-size:9.5px; letter-spacing:0.4em; text-transform:uppercase; color:oklch(0.62 0.075 65);">V · New Arrivals</div>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-weight:300; font-size:42px; letter-spacing:-0.02em; margin:22px 0 0;">Just arrived</h2>
+      </div>
+      <div style="display:flex; gap:28px; align-items:center; font-size:10px; letter-spacing:0.24em; text-transform:uppercase;">
+        <a href="#" style="border-bottom:1px solid oklch(0.21 0.005 60 / 0.35); padding-bottom:7px; transition:border-color .45s ease;" style-hover="border-color:oklch(0.62 0.075 65);">View all 41</a>
+        <div style="display:flex; gap:9px; color:oklch(0.21 0.005 60 / 0.5);">
+          <span style="width:38px; height:38px; border:1px solid oklch(0.21 0.005 60 / 0.18); display:grid; place-items:center;">←</span>
+          <span style="width:38px; height:38px; border:1px solid oklch(0.21 0.005 60 / 0.18); display:grid; place-items:center;">→</span>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:22px;">
+      <div>
+        <div style="position:relative; height:470px; background:oklch(0.88 0.014 80); min-width:0; overflow:hidden;">
+          <image-slot id="oriel-pr1" shape="rect" placeholder="Produto 01"></image-slot>
+          <div style="position:absolute; top:16px; left:16px; pointer-events:none; font-size:8.5px; letter-spacing:0.24em; text-transform:uppercase; background:oklch(0.955 0.012 85); padding:7px 10px;">New</div>
+        </div>
+        <div style="margin-top:20px;">
+          <div style="font-family:'Cormorant Garamond',serif; font-size:21px; line-height:1.2;">Sézanne Overcoat</div>
+          <div style="margin-top:8px; font-size:9.5px; letter-spacing:0.2em; text-transform:uppercase; color:oklch(0.21 0.005 60 / 0.5);">Double wool · Camel</div>
+          <div style="margin-top:13px; font-size:12px; letter-spacing:0.06em; color:oklch(0.21 0.005 60 / 0.75);">€ 2,480</div>
+        </div>
+      </div>
+      <div>
+        <div style="position:relative; height:470px; background:oklch(0.88 0.014 80); min-width:0; overflow:hidden;">
+          <image-slot id="oriel-pr2" shape="rect" placeholder="Produto 02"></image-slot>
+        </div>
+        <div style="margin-top:20px;">
+          <div style="font-family:'Cormorant Garamond',serif; font-size:21px; line-height:1.2;">Taitbout Blazer</div>
+          <div style="margin-top:8px; font-size:9.5px; letter-spacing:0.2em; text-transform:uppercase; color:oklch(0.21 0.005 60 / 0.5);">Waxed linen · Ink</div>
+          <div style="margin-top:13px; font-size:12px; letter-spacing:0.06em; color:oklch(0.21 0.005 60 / 0.75);">€ 1,290</div>
+        </div>
+      </div>
+      <div>
+        <div style="position:relative; height:470px; background:oklch(0.88 0.014 80); min-width:0; overflow:hidden;">
+          <image-slot id="oriel-pr3" shape="rect" placeholder="Produto 03"></image-slot>
+        </div>
+        <div style="margin-top:20px;">
+          <div style="font-family:'Cormorant Garamond',serif; font-size:21px; line-height:1.2;">Halabi Knit</div>
+          <div style="margin-top:8px; font-size:9.5px; letter-spacing:0.2em; text-transform:uppercase; color:oklch(0.21 0.005 60 / 0.5);">Cashmere · Bone</div>
+          <div style="margin-top:13px; font-size:12px; letter-spacing:0.06em; color:oklch(0.21 0.005 60 / 0.75);">€ 940</div>
+        </div>
+      </div>
+      <div>
+        <div style="position:relative; height:470px; background:oklch(0.88 0.014 80); min-width:0; overflow:hidden;">
+          <image-slot id="oriel-pr4" shape="rect" placeholder="Produto 04"></image-slot>
+        </div>
+        <div style="margin-top:20px;">
+          <div style="font-family:'Cormorant Garamond',serif; font-size:21px; line-height:1.2;">Neuf Leather Bag</div>
+          <div style="margin-top:8px; font-size:9.5px; letter-spacing:0.2em; text-transform:uppercase; color:oklch(0.21 0.005 60 / 0.5);">Calf · Cognac</div>
+          <div style="margin-top:13px; font-size:12px; letter-spacing:0.06em; color:oklch(0.21 0.005 60 / 0.75);">€ 1,860</div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:30px; font-size:9.5px; letter-spacing:0.26em; text-transform:uppercase; color:oklch(0.21 0.005 60 / 0.4);">Hover troca para a foto de corpo · crossfade 700ms · legenda sobe 6px</div>
+  </section>
+
+  <section style="padding:132px 0 0;">
+    <div style="position:relative; height:800px; background:oklch(0.23 0.01 60); min-width:0; overflow:hidden;">
+      <image-slot id="oriel-film" shape="rect" placeholder="Filme de campanha · quase fullscreen"></image-slot>
+      <div style="position:absolute; inset:0; pointer-events:none; background:linear-gradient(to bottom, oklch(0.21 0.005 60 / 0.3), oklch(0.21 0.005 60 / 0.1) 50%, oklch(0.21 0.005 60 / 0.68));"></div>
+      <div style="position:absolute; left:0; right:0; top:50%; transform:translateY(-50%); text-align:center; pointer-events:none; color:oklch(0.97 0.012 85);">
+        <div style="width:78px; height:78px; border:1px solid oklch(0.97 0.012 85 / 0.6); border-radius:50%; display:grid; place-items:center; margin:0 auto; font-size:11px; letter-spacing:0.1em;">▶</div>
+        <div style="margin-top:34px; font-size:9.5px; letter-spacing:0.4em; text-transform:uppercase; color:oklch(0.86 0.05 85);">VI · The Film</div>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-weight:300; font-size:64px; line-height:1.05; letter-spacing:-0.03em; margin:24px 0 0;">A Winter in <em style="font-style:italic;">Paris</em></h2>
+        <p style="max-width:400px; margin:26px auto 0; font-size:13.5px; line-height:1.85; font-weight:300; color:oklch(0.955 0.012 85 / 0.78);">Directed by Camille Ferrand. Filmed on 35mm across the ninth arrondissement over four mornings.</p>
+      </div>
+      <div style="position:absolute; left:56px; bottom:44px; pointer-events:none; font-size:9.5px; letter-spacing:0.28em; text-transform:uppercase; color:oklch(0.955 0.012 85 / 0.7);">02:47 · Chapter III</div>
+      <div style="position:absolute; right:56px; bottom:44px; pointer-events:none; font-size:9.5px; letter-spacing:0.28em; text-transform:uppercase; color:oklch(0.955 0.012 85 / 0.7);">Som ativado ao hover</div>
+    </div>
+    <div style="background:oklch(0.21 0.005 60); color:oklch(0.955 0.012 85); overflow:hidden; padding:24px 0; border-top:1px solid oklch(0.78 0.045 85 / 0.22);">
+      <div style="display:flex; width:200%; gap:56px; white-space:nowrap; animation:oriel-slide 40s linear infinite; font-family:'Cormorant Garamond',serif; font-size:21px; font-style:italic; color:oklch(0.955 0.012 85 / 0.6);">
+        <span>Cut by hand</span><span>·</span><span>Short series</span><span>·</span><span>Named mills</span><span>·</span><span>Fitted on the body</span><span>·</span><span>Lifetime alterations</span><span>·</span>
+        <span>Cut by hand</span><span>·</span><span>Short series</span><span>·</span><span>Named mills</span><span>·</span><span>Fitted on the body</span><span>·</span><span>Lifetime alterations</span><span>·</span>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:136px 56px 132px;">
+    <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.1fr); gap:88px; align-items:start;">
+      <div>
+        <div style="font-size:9.5px; letter-spacing:0.4em; text-transform:uppercase; color:oklch(0.62 0.075 65);">VII · Savoir-Faire</div>
+        <h2 style="font-family:'Cormorant Garamond',serif; font-weight:300; font-size:48px; line-height:1.1; letter-spacing:-0.03em; margin:26px 0 0;">Nine hands,<br>one garment.</h2>
+        <p style="margin:28px 0 48px; max-width:410px; font-size:14.5px; line-height:1.92; font-weight:300; color:oklch(0.21 0.005 60 / 0.72);">An ORIEL overcoat passes through nine pairs of hands over eleven days. Three of those stages have never been mechanised — and never will be.</p>
+        <div style="border-top:1px solid oklch(0.78 0.045 85 / 0.55);">
+          <div style="display:grid; grid-template-columns:40px minmax(0,1fr) auto; gap:18px; padding:20px 0; border-bottom:1px solid oklch(0.78 0.045 85 / 0.55); font-size:13.5px; font-weight:300;"><span style="font-size:9.5px; letter-spacing:0.18em; color:oklch(0.21 0.005 60 / 0.42); padding-top:4px;">I</span><span>Pattern drawn in kraft paper</span><span style="font-size:9.5px; letter-spacing:0.2em; text-transform:uppercase; color:oklch(0.62 0.075 65);">By hand</span></div>
+          <div style="display:grid; grid-template-columns:40px minmax(0,1fr) auto; gap:18px; padding:20px 0; border-bottom:1px solid oklch(0.78 0.045 85 / 0.55); font-size:13.5px; font-weight:300;"><span style="font-size:9.5px; letter-spacing:0.18em; color:oklch(0.21 0.005 60 / 0.42); padding-top:4px;">II</span><span>Cloth rested before cutting</span><span style="font-size:9.5px; letter-spacing:0.2em; text-transform:uppercase; color:oklch(0.21 0.005 60 / 0.42);">21 days</span></div>
+          <div style="display:grid; grid-template-columns:40px minmax(0,1fr) auto; gap:18px; padding:20px 0; border-bottom:1px solid oklch(0.78 0.045 85 / 0.55); font-size:13.5px; font-weight:300;"><span style="font-size:9.5px; letter-spacing:0.18em; color:oklch(0.21 0.005 60 / 0.42); padding-top:4px;">III</span><span>Canvas basted into the chest</span><span style="font-size:9.5px; letter-spacing:0.2em; text-transform:uppercase; color:oklch(0.62 0.075 65);">By hand</span></div>
+          <div style="display:grid; grid-template-columns:40px minmax(0,1fr) auto; gap:18px; padding:20px 0; border-bottom:1px solid oklch(0.78 0.045 85 / 0.55); font-size:13.5px; font-weight:300;"><span style="font-size:9.5px; letter-spacing:0.18em; color:oklch(0.21 0.005 60 / 0.42); padding-top:4px;">IV</span><span>First fitting on the body</span><span style="font-size:9.5px; letter-spacing:0.2em; text-transform:uppercase; color:oklch(0.21 0.005 60 / 0.42);">Atelier</span></div>
+          <div style="display:grid; grid-template-columns:40px minmax(0,1fr) auto; gap:18px; padding:20px 0; border-bottom:1px solid oklch(0.78 0.045 85 / 0.55); font-size:13.5px; font-weight:300;"><span style="font-size:9.5px; letter-spacing:0.18em; color:oklch(0.21 0.005 60 / 0.42); padding-top:4px;">V</span><span>Buttonholes worked in silk</span><span style="font-size:9.5px; letter-spacing:0.2em; text-transform:uppercase; color:oklch(0.62 0.075 65);">By hand</span></div>
+        </div>
+        <a href="#" style="display:inline-block; margin-top:44px; font-size:10px; letter-spacing:0.28em; text-transform:uppercase; border-bottom:1px solid oklch(0.21 0.005 60 / 0.4); padding-bottom:8px; transition:border-color .45s ease;" style-hover="border-color:oklch(0.62 0.075 65);">All nine stages</a>
+      </div>
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:22px;">
+        <div style="height:640px; background:oklch(0.88 0.014 80); min-width:0; overflow:hidden; grid-row:span 2;"><image-slot id="oriel-sf1" shape="rect" placeholder="Mãos no corte"></image-slot></div>
+        <div style="height:309px; background:oklch(0.88 0.014 80); min-width:0; overflow:hidden; margin-top:80px;"><image-slot id="oriel-sf2" shape="rect" placeholder="Molde em papel"></image-slot></div>
+        <div style="height:309px; background:oklch(0.88 0.014 80); min-width:0; overflow:hidden; margin-top:80px;"><image-slot id="oriel-sf3" shape="rect" placeholder="Macro de tecido"></image-slot></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:oklch(0.33 0.055 55); color:oklch(0.97 0.012 85); padding:116px 56px;">
+    <div style="max-width:620px; margin:0 auto; text-align:center;">
+      <div style="font-size:9.5px; letter-spacing:0.4em; text-transform:uppercase; color:oklch(0.88 0.05 85 / 0.8);">VIII · The Circle</div>
+      <h2 style="font-family:'Cormorant Garamond',serif; font-weight:300; font-size:44px; line-height:1.14; letter-spacing:-0.025em; margin:26px 0 18px;">Letters from the atelier</h2>
+      <p style="margin:0 auto; max-width:440px; font-size:14px; line-height:1.9; font-weight:300; color:oklch(0.97 0.012 85 / 0.78);">One letter each month: new pieces, collection notes, and first access to short series.</p>
+      <div style="display:flex; gap:22px; align-items:baseline; border-bottom:1px solid oklch(0.97 0.012 85 / 0.4); padding-bottom:15px; margin-top:52px;">
+        <span style="flex:1; text-align:left; font-size:14px; font-weight:300; color:oklch(0.97 0.012 85 / 0.5);">Your email address</span>
+        <a href="#" style="font-size:10px; letter-spacing:0.28em; text-transform:uppercase; transition:color .45s ease;" style-hover="color:oklch(0.88 0.05 85);">Subscribe →</a>
+      </div>
+      <div style="margin-top:18px; font-size:10.5px; font-weight:300; color:oklch(0.97 0.012 85 / 0.5);">No data shared. Unsubscribe in one click.</div>
+    </div>
+  </section>
+
+  <footer style="background:oklch(0.21 0.005 60); color:oklch(0.955 0.012 85); padding:88px 56px 40px;">
+    <div style="text-align:center; padding-bottom:68px; border-bottom:1px solid oklch(0.78 0.045 85 / 0.22);">
+      <div style="font-family:'Cormorant Garamond',serif; font-size:38px; letter-spacing:0.5em; padding-left:0.5em;">ORIEL</div>
+      <div style="margin-top:12px; font-size:8.5px; letter-spacing:0.42em; text-transform:uppercase; color:oklch(0.955 0.012 85 / 0.45);">Maison · Paris · Since 1994</div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(4,minmax(0,1fr)) minmax(0,1.2fr); gap:44px; padding:64px 0;">
+      <div style="display:flex; flex-direction:column; gap:14px; font-size:12.5px; font-weight:300; color:oklch(0.955 0.012 85 / 0.62);">
+        <div style="font-size:9.5px; letter-spacing:0.26em; text-transform:uppercase; color:oklch(0.955 0.012 85 / 0.38); margin-bottom:8px;">Shop</div>
+        <a href="#">New Arrivals</a><a href="#">Womenswear</a><a href="#">Menswear</a><a href="#">Accessories</a><a href="#">Footwear</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:14px; font-size:12.5px; font-weight:300; color:oklch(0.955 0.012 85 / 0.62);">
+        <div style="font-size:9.5px; letter-spacing:0.26em; text-transform:uppercase; color:oklch(0.955 0.012 85 / 0.38); margin-bottom:8px;">Maison</div>
+        <a href="#">Manifesto</a><a href="#">Savoir-faire</a><a href="#">Our mills</a><a href="#">Sustainability</a><a href="#">Careers</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:14px; font-size:12.5px; font-weight:300; color:oklch(0.955 0.012 85 / 0.62);">
+        <div style="font-size:9.5px; letter-spacing:0.26em; text-transform:uppercase; color:oklch(0.955 0.012 85 / 0.38); margin-bottom:8px;">Client Services</div>
+        <a href="#">Shipping</a><a href="#">Returns</a><a href="#">Lifetime alterations</a><a href="#">Care guide</a><a href="#">Contact</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:14px; font-size:12.5px; font-weight:300; color:oklch(0.955 0.012 85 / 0.62);">
+        <div style="font-size:9.5px; letter-spacing:0.26em; text-transform:uppercase; color:oklch(0.955 0.012 85 / 0.38); margin-bottom:8px;">Follow</div>
+        <a href="#">Instagram</a><a href="#">Journal</a><a href="#">Pinterest</a><a href="#">Newsletter</a>
+      </div>
+      <div style="font-size:12.5px; font-weight:300; line-height:1.9; color:oklch(0.955 0.012 85 / 0.55);">
+        <div style="font-size:9.5px; letter-spacing:0.26em; text-transform:uppercase; color:oklch(0.955 0.012 85 / 0.38); margin-bottom:22px;">Atelier</div>
+        14 rue Taitbout, 75009 Paris<br>Tuesday to Saturday, by appointment<br><span style="color:oklch(0.78 0.045 85);">+33 1 44 82 09 11</span>
+      </div>
+    </div>
+    <div style="display:flex; justify-content:space-between; align-items:center; padding-top:30px; border-top:1px solid oklch(0.78 0.045 85 / 0.22); font-size:9.5px; letter-spacing:0.18em; text-transform:uppercase; color:oklch(0.955 0.012 85 / 0.38);">
+      <span>© 2026 Maison Oriel</span>
+      <div style="display:flex; gap:28px;"><a href="#">Legal</a><a href="#">Privacy</a><a href="#">Cookies</a><a href="#">Accessibility</a></div>
+      <span>EUR € · France</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+</body>
+</html>
